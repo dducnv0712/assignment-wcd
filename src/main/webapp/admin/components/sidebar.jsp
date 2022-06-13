@@ -174,7 +174,7 @@
                 <div class="collapse" id="ui-basic-or">
                     <ul class="nav flex-column sub-menu">
                         <li class="nav-item"> <a class="nav-link" href="/admin/product">List</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="/admin/product/add">Add</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="/admin/product/create">Add</a></li>
                     </ul>
                 </div>
             </li>
