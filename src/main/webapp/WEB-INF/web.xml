@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>Admin</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <!--     CATEGORY ROUTES-->
+    <servlet>
+        <servlet-name>CategoryIndex</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.Category.CategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryIndex</servlet-name>
+        <url-pattern>/admin/category</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CategoryCreate</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.Category.CreateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryCreate</servlet-name>
+        <url-pattern>/admin/category/create</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CategoryUpdate</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.Category.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryUpdate</servlet-name>
+        <url-pattern>/admin/category/update</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CategoryDelete</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.Category.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryDelete</servlet-name>
+        <url-pattern>/admin/category/delete</url-pattern>
+    </servlet-mapping>
+    <!--    END OF CATEGORY ROUTES-->
+
+    <!--    PRODUCT ROUTES-->
+    <servlet>
+        <servlet-name>ProductIndex</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.Product.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductIndex</servlet-name>
+        <url-pattern>/admin/product</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProductCreate</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.Product.CreateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductCreate</servlet-name>
+        <url-pattern>/admin/product/create</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProductUpdate</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.Product.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductUpdate</servlet-name>
+        <url-pattern>/admin/product/update</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProductDelete</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.Product.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDelete</servlet-name>
+        <url-pattern>/admin/product/delete</url-pattern>
+    </servlet-mapping>
+    <!--    END OF PRODUCT ROUTES-->
+</web-app>
